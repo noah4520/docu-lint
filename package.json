@@ -23,7 +23,10 @@
     "build": "tsc",
     "prepublishOnly": "npm run build",
     "demo": "npm run build && node ./dist/cli.js ./examples/bad-readme.md",
-    "demo:fix": "npm run build && node ./dist/cli.js ./examples/bad-readme.md --fix"
+    "demo:fix": "npm run build && node ./dist/cli.js ./examples/bad-readme.md --fix",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [
     "markdown",
@@ -34,6 +37,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^26.6.6",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vitepress": "^1.6.4"
   }
 }

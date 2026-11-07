@@ -4,6 +4,7 @@
 
 ![license](https://img.shields.io/badge/license-MIT-blue)
 ![node](https://img.shields.io/badge/node-%3E%3D22-339933?logo=nodedotjs&logoColor=white)
+![docs](https://img.shields.io/badge/docs-VitePress-42b883)
 
 `docu-lint` 會檢查中英文之間的空格、中文段落的標點，以及專有名詞的大小寫。在你把專案公開之前，先幫文件做一次基本的健康檢查。
 
@@ -88,6 +89,14 @@ console.log(fixed);
 ### `formatReport(result)`
 
 把檢查結果轉成適合在終端機顯示的文字。
+
+## 文件網站
+
+`docs/` 資料夾是用 VitePress 建立的文件網站，在本機預覽：
+
+```bash
+npm run docs:dev
+```
 
 ## 參與貢獻
 
