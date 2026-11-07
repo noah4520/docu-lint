@@ -1,9 +1,33 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  lang: "zh-TW",
   title: "docu-lint",
   description: "檢查 README 與技術文件寫作問題的 Markdown 小工具",
+
+  locales: {
+    root: {
+      label: "繁體中文",
+      lang: "zh-TW"
+    },
+    en: {
+      label: "English",
+      lang: "en-US",
+      link: "/en/",
+      description: "Markdown writing checks for README and technical docs.",
+      themeConfig: {
+        nav: [
+          { text: "Guide", link: "/en/guide/" },
+          { text: "API", link: "/en/api/" },
+          { text: "Playground", link: "/en/playground/" }
+        ],
+        sidebar: {
+          "/en/guide/": [{ text: "Introduction", link: "/en/guide/" }],
+          "/en/api/": [{ text: "API Reference", link: "/en/api/" }],
+          "/en/playground/": [{ text: "Playground", link: "/en/playground/" }]
+        }
+      }
+    }
+  },
 
   themeConfig: {
     nav: [
