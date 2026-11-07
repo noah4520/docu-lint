@@ -1,0 +1,39 @@
+{
+  "name": "docu-lint",
+  "version": "0.1.0",
+  "description": "A tiny Markdown writing checker for README and technical docs demos.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "bin": {
+    "docu-lint": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "demo": "npm run build && node ./dist/cli.js ./examples/bad-readme.md",
+    "demo:fix": "npm run build && node ./dist/cli.js ./examples/bad-readme.md --fix"
+  },
+  "keywords": [
+    "markdown",
+    "readme",
+    "documentation",
+    "lint"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
