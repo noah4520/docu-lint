@@ -2,6 +2,9 @@
 
 > 一個幫 README 與技術文件檢查寫作問題的 Markdown 小工具。
 
+![license](https://img.shields.io/badge/license-MIT-blue)
+![node](https://img.shields.io/badge/node-%3E%3D22-339933?logo=nodedotjs&logoColor=white)
+
 `docu-lint` 會檢查中英文之間的空格、中文段落的標點，以及專有名詞的大小寫。在你把專案公開之前，先幫文件做一次基本的健康檢查。
 
 ## 適用情境
