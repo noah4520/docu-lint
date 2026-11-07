@@ -19,3 +19,23 @@
 ```bash
 npm install --save-dev docu-lint
 ```
+
+## 快速開始
+
+```bash
+npx docu-lint README.md
+```
+
+加上 `--fix` 會直接套用安全的自動修正：
+
+```bash
+npx docu-lint README.md --fix
+```
+
+> **注意：** `npx docu-lint` 要等套件發佈到 npm 之後才能使用。
+> 在那之前，請先 clone 這個 repo，改跑本機的示範：
+>
+> ```bash
+> npm install
+> npm run demo
+> ```
