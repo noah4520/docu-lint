@@ -39,3 +39,49 @@ npx docu-lint README.md --fix
 ```bash
 npm install --save-dev docu-lint
 ```
+
+## 使用方式
+
+在 repo 裡執行內建的範例：
+
+```bash
+npm run demo
+```
+
+套用自動修正：
+
+```bash
+npm run demo:fix
+```
+
+查看目前的版本：
+
+```bash
+npx docu-lint --version
+```
+
+也可以直接在程式裡呼叫：
+
+```ts
+import { formatMarkdown, lintMarkdown } from "docu-lint";
+
+const result = lintMarkdown("使用Vue3開發一個Web App.");
+console.log(result.issues);
+
+const fixed = formatMarkdown("使用Vue3開發一個Web App.");
+console.log(fixed);
+```
+
+## API
+
+### `lintMarkdown(markdown, options)`
+
+檢查 Markdown 文字，回傳包含 `ok`、`filename` 與 `issues` 的報告。
+
+### `formatMarkdown(markdown)`
+
+在程式碼區塊以外套用安全的自動修正，回傳修正後的 Markdown。
+
+### `formatReport(result)`
+
+把檢查結果轉成適合在終端機顯示的文字。
