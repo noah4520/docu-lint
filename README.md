@@ -10,16 +10,6 @@
 - 中英文混排的技術文件校對
 - 團隊文件規範的 CI 檢查
 
-## 安裝
-
-一般情況下不需要另外安裝。`npx` 會下載你指定的版本、執行 CLI，而且不會在專案裡留下多餘的檔案。
-
-如果想把它加進專案裡固定使用：
-
-```bash
-npm install --save-dev docu-lint
-```
-
 ## 快速開始
 
 ```bash
@@ -39,3 +29,13 @@ npx docu-lint README.md --fix
 > npm install
 > npm run demo
 > ```
+
+## 安裝
+
+一般情況下不需要另外安裝。`npx` 會下載你指定的版本、執行 CLI，而且不會在專案裡留下多餘的檔案。
+
+如果想把它加進專案裡固定使用：
+
+```bash
+npm install --save-dev docu-lint
+```
