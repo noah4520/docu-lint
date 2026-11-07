@@ -4,6 +4,11 @@ export default defineConfig({
   title: "docu-lint",
   description: "檢查 README 與技術文件寫作問題的 Markdown 小工具",
 
+  // GitHub Pages（Project Pages）會把網站放在
+  // https://<user>.github.io/docu-lint/，所以所有資源路徑
+  // 都要加上 repo 名稱。如果改用自訂網域，這裡要改成 "/"。
+  base: "/docu-lint/",
+
   locales: {
     root: {
       label: "繁體中文",
