@@ -4,10 +4,9 @@ export default defineConfig({
   title: "docu-lint",
   description: "檢查 README 與技術文件寫作問題的 Markdown 小工具",
 
-  // GitHub Pages（Project Pages）會把網站放在
-  // https://<user>.github.io/docu-lint/，所以所有資源路徑
-  // 都要加上 repo 名稱。如果改用自訂網域，這裡要改成 "/"。
-  base: "/docu-lint/",
+  // 部署到子路徑時（例如 GitHub Pages 的 /docu-lint/），
+  // 由部署環境用 DOCS_BASE 指定；沒有設定就使用根路徑 "/"。
+  base: process.env.DOCS_BASE ?? "/",
 
   locales: {
     root: {
