@@ -98,6 +98,27 @@ console.log(fixed);
 npm run docs:dev
 ```
 
+## 課程範例分支
+
+這個 repo 也是「給工程師的開源專案實踐課」第 5 章的課程範例，每個小節完成時的狀態都保存在一個分支：
+
+```text
+5.0-start                起點：只有程式碼，README 只有標題
+5.3-readme               5.3：一步一步寫出 README，每個段落一個 commit
+5.4-badge                5.4：加上 badge
+5.5-vitepress            5.5：建立 VitePress 文件網站
+5.6-vitepress-config     5.6：導覽列、側邊欄與英文版
+5.8-github-pages         5.8：用 GitHub Actions 部署到 GitHub Pages
+5.9-cloudflare-workers   5.9：部署到 Cloudflare Workers，base 改由環境變數決定
+main                     完成版：以上全部，加上這份說明
+```
+
+想看某一個小節改了什麼，可以比較它和前一個分支的差異：
+
+```bash
+git diff 5.6-vitepress-config 5.8-github-pages
+```
+
 ## 參與貢獻
 
 這個專案刻意保持精簡。適合第一次貢獻的方向包括：新增一條檢查規則、改善報告的輸出格式，或是幫文件網站補上範例。
